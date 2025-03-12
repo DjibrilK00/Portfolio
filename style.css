@@ -1,0 +1,414 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Cette ligne garantit que le body prend toute la hauteur de la fenêtre */
+    margin: 0; /* Enlève la marge par défaut du body */
+    background: linear-gradient(150deg, #4e4e4e, #c9c9c9);
+}
+main {
+    flex: 1; /* Cette ligne permet au contenu de s'étendre pour remplir l'espace disponible */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #d8d8d8;
+}
+
+footer {
+    background-color: #333; /* Choisis la couleur de ton footer */
+    color: white; /* Choisis la couleur du texte du footer */
+    text-align: center; /* Centre le texte du footer */
+    padding: 10px 0; /* Ajuste les espacements du footer */
+}
+
+section {
+    padding: 2rem;
+}
+
+.competences .route {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.etape {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0b7dda;
+}
+.image-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.image-header img {
+    width: 80px; /* ajuste la taille de l'image selon ton besoin */
+    height: auto;
+}
+
+.fondsombre {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 50px auto; /* Espacement vertical */
+    max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
+    padding: 20px; /* Ajoute un espace intérieur */
+    background: rgba(0, 0, 0, 0.7); /* Arrière-plan sombre et semi-transparent */
+    border-radius: 10px; /* Coins arrondis pour un effet moderne */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet visuel */
+    color: white; /* Texte blanc pour contraste */
+
+}
+/* Conteneur principal pour le parcours */
+.parcours-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espace entre les étapes */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Limite la largeur */
+}
+
+/* Style pour chaque étape */
+.parcours-step {
+    background-color: #444; /* Fond sombre */
+    color: #fff; /* Texte blanc */
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+/* Contenu visuel du schéma */
+.parcours-schema {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Icône dans le schéma */
+.schema-icon {
+    font-size: 40px; /* Taille de l'icône */
+    color: #ffcc00; /* Couleur d'accent */
+}
+
+/* Texte explicatif dans le schéma */
+.parcours-schema p {
+    margin: 0;
+    font-size: 1rem;
+}
+/* Conteneur des icônes dans le footer */
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les icônes */
+}
+
+/* Style des icônes */
+.footer-icons .icon {
+    width: 40px; /* Taille de l'icône */
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Effet au survol */
+.footer-icons .icon:hover {
+    transform: scale(1.2); /* Agrandissement au survol */
+    opacity: 0.8; /* Transparence légère */
+}
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.certification {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.certification img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.certification h3 {
+    font-size: 1.2em;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.certification p {
+    font-size: 0.95em;
+    color: #666;
+}.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.2em;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.project img {
+    width: 100%; /* S'adapte à la largeur de son conteneur */
+    height: 600px; /* Fixe une hauteur uniforme */
+    object-fit: cover; /* Recadre l'image pour remplir l'espace sans déformation */
+    border-radius: 8px; /* Ajoute des coins arrondis pour un effet esthétique */
+    margin-bottom: 10px;
+}
+#mentions-legales {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mentions-legales h1 {
+    text-align: center;
+    color: #666;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#mentions-legales p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-icons .icon {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-icons .icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #mentions-legales {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+#competences {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(150deg, #4e4e4e, #c9c9c9);
+    
+}
+
+
+
+.competence-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.competence-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.competence-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.competence-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.competence-icons img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.competence-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .competence-container {
+        grid-template-columns: 1fr;
+    }
+}
+#accueil {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(150deg, #4e4e4e, #c9c9c9);
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil::before {
+    content: "Djibril KANTE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw; /* Taille relative à l’écran */
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1); /* Blanc très transparent */
+    z-index: 0;
+    user-select: none; /* Empêche la sélection du texte */
+}
+
+.accueil-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+#stages {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.stage {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.stage p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
