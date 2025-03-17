@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Page de Contact</h1>
+            <nav>
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="article1.html">Article 1</a></li>
+                    <li><a href="article2.html">Article 2</a></li>
+                    <li><a href="article3.html">Article 3</a></li>
+                    <li><a href="article4.html">Article 4</a></li>
+                    <li><a href="article5.html">Article 5</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Envoyer un message</h2>
+            <form action="https://formspree.io/f/xbljvynj" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Sujet :</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Djibril KANTE</p>
+    </footer>
+
+</body>
+</html>

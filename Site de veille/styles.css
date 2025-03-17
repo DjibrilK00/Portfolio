@@ -1,0 +1,191 @@
+/* Règles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/fond.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Texte en blanc */
+    line-height: 1.6;
+}
+
+
+
+/* En-tête et menu */
+header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #16213e;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section principale */
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #1a1a2e;
+}
+
+/* Règles pour les images */
+img {
+    max-width: 100%;
+    height: auto; /* Pour conserver les proportions */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Pied de page */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+a {
+    color: white;
+}
+
+/* Liens au survol : changer de couleur pour visibilité */
+a:hover {
+    color: #00d4ff; /* Une teinte bleu clair pour contraste */
+}
+
+/* Gérer les titres pour s'assurer qu'ils restent lisibles */
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+h2 {
+    color: white !important;
+}
+.conclusion {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 50px auto; /* Espacement vertical */
+    max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
+    padding: 20px; /* Ajoute un espace intérieur */
+    background: rgba(0, 0, 0, 0.7); /* Arrière-plan sombre et semi-transparent */
+    border-radius: 10px; /* Coins arrondis pour un effet moderne */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet visuel */
+    color: white; /* Texte blanc pour contraste */
+}
+
+/* Style des titres */
+.conclusion h2 {
+    font-size: 2rem; /* Taille plus grande pour le titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    color: #00d4ff; /* Couleur distincte pour le titre */
+}
+
+/* Style des paragraphes */
+.conclusion p {
+    font-size: 1.2rem; /* Taille du texte augmentée pour une meilleure lisibilité */
+    line-height: 1.8; /* Espacement entre les lignes */
+    margin: 10px 0; /* Espacement entre les paragraphes */
+}
+.image-article1 {
+    max-width: auto; /* Limite la largeur de l'image à 50% de sa taille originale */
+    height: auto; /* Conserve les proportions de l'image */
+    display: block; /* Empêche l'image de déborder */
+    margin: 0 auto; /* Centre l'image */
+}
+.fondsombre {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 50px auto; /* Espacement vertical */
+    max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
+    padding: 20px; /* Ajoute un espace intérieur */
+    background: rgba(0, 0, 0, 0.7); /* Arrière-plan sombre et semi-transparent */
+    border-radius: 10px; /* Coins arrondis pour un effet moderne */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet visuel */
+    color: white; /* Texte blanc pour contraste */
+
+}
+.contact-form {
+    background-color: #1a1a2e;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2cm;
+}
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: #00d4ff;
+    border: none;
+    color: rgb(112, 107, 107);
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #008ecc;
+}
